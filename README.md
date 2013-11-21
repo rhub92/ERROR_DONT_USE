@@ -33,8 +33,10 @@ void stopRobot()- stops the robot
 Sample code:
 
 void leftMotorForward() {
-	TA0CCTL0 |= OUTMOD_5;
-	_delay_cycles(10000);
+    TA0CCTL0 |= OUTMOD_5;
+    
+    _delay_cycles(10000);
+    
     TA0CCR1 = 60;
 }
 
