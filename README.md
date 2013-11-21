@@ -1,11 +1,11 @@
-Robot_Movement_Library
-======================
+# Robot_Movement_Library
 
 Contains the code neccesary to move the robot's different motors, and move the robot in certain directions
 
-Functions:
+## Functions
 
-void initMotorTimer()- Initializes the timer on the robot
+- `void initMotorTimer()`
+    - Initializes the timer on the robot
 
 void leftMotorForward()- moves the left motor forward
 
@@ -29,9 +29,9 @@ void moveRobotRight()- makes the robot turn right
 
 void stopRobot()- stops the robot
 
+## Sample code
 
-Sample code:
-
+```c
 void leftMotorForward() {
     
     TA0CCTL0 |= OUTMOD_5;
@@ -39,6 +39,6 @@ void leftMotorForward() {
     TA0CCR1 = 60;
     
 }
-
+```
 This code makes the left motor go forward by setting the output mode to reset and setting the duty cycle
 to sixty percent.
